@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Strona o Minecraft</title>
+        <style>
+            h1 {
+                color:rgb(1, 2, 1);
+            }
+            div.scroll {
+                margin:4px, 4px;
+                padding:4px;
+                background-color: rgb(134, 160, 134);
+                height: 110px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align:justify;
+                display:none;
+            }
+            .collapse {
+                cursor: pointer;
+            }
+            #itemsList img{
+                width: 30px;
+            }
+        </style>
+        <script>
+            function collapseList(id){
+                let el=document.getElementById(id);
+                if(getComputedStyle(el).display=='block'){
+                    el.style.display='none';
+                }
+                else{
+                    el.style.display='block'
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Minecraft
+            <small>bedrok edyszyn
 
-<head>
-    <title>Minecraft</title>
-</head>
+            </small>
+        </h1>
+        <img src="./img/minecraft.png" />
+        <h3>Wybierz ludzika  Alexa albo Stevea albo przejdź do strony <a href="https://www.minecraft.net/pl-pl">Minecraft</a>
 
-<body>
-    <h1>Test</h1>
-</body>
+        </h3>
+        <p>uważaj na moby w  minecraftową noc jeśli jesteś na przetrwaniu mogą cię zaatakować</p>
+        <h4>Najrzadsze itemy <span onclick="collapseList('itemsList')" class="collapse">↓</span></h4>
+        <div class="scroll" id="itemsList">
+           <ul>
+               <li><img src="img/items/Endermite.png"></img></li>
+               <li><img src="img/items/Mikstury.gif"></img></li>
+               <li><img src="img/items/diaksy.png"></img></li>
+           </ul>
 
-</html>
+        </div>
+        Wybierz świat pokojowy przetrwanie kreatywny i hardcore jak będziesz tworzył świat będziesz miał opcje żeby wybrać gdzie wyląduje twój ludzik
+        <h1>1
+            .obrazy Minecraft
+
+
+        </h1>
+        <img src="img/Mushroomislandshore.png"/>
+        <img src="img/Sawanna2.png"/>
+        <img src="img/Pustynia.png"/>
+<h1>2.
+    kraftingi
+
+
+
+    </body>
+</html> 
